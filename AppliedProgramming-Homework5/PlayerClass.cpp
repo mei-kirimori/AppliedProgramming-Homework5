@@ -47,7 +47,14 @@ Player::Player()
 
 Player::Player(const char* inname)
 {
-	name[0] = inname;
+	if (inname != nullptr)
+	{
+		name[0] = inname;
+	}
+	else
+	{
+		name[0] = "unknown";
+	}
 	toranpuRank = 0;
 }
 void Player::hit()
