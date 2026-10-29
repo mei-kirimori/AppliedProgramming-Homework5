@@ -72,7 +72,7 @@ void Player::showNumber()
 	cout << name[0] << "s card is " << toranpuRank << endl;
 }
 
-void judge(Player& player, Player& enemy)
+void judge(Player& player, Player& enemy)　//修正//ここちゃんとconst付けてgetnmeber関数にもconstをつける
 {
 	if (player.getNumber() > enemy.getNumber())
 	{
