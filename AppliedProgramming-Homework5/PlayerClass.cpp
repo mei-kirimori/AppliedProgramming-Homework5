@@ -49,11 +49,11 @@ Player::Player(const char* inname)
 {
 	if (inname != nullptr)
 	{
-		name[0] = inname;
+		name = inname;
 	}
 	else
 	{
-		name[0] = "unknown";
+		name = "unknown";
 	}
 	toranpuRank = 0;
 }
