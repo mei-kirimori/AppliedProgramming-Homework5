@@ -1,7 +1,7 @@
 #pragma once
-class Player
-{
-public:
+//class Player
+//{
+/*	public:
 	void hit();
 	int getNumber();
 	void showNumber();
@@ -9,6 +9,25 @@ public:
 	
 private:
 	int toranpuRank;
+};
+
+void judge(Player& player, Player& enemy);
+*/
+
+//修正版
+
+class Player
+{
+public:
+	void hit();
+	int getNumber();
+	void showNumber();
+	const char* name[32];
+	Player();
+	Player(const char* inname);
+private:
+	int toranpuRank;
+
 };
 
 void judge(Player& player, Player& enemy);
