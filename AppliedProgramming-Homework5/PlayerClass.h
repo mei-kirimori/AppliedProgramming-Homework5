@@ -22,7 +22,7 @@ public:
 	void hit();
 	int getNumber();
 	void showNumber();
-	const char* name[32];
+	const char* name;
 	Player();
 	Player(const char* inname);
 private:
